@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:Ucar_Meric_KleurenPaneel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="LightGray">
+    <Grid x:Name="hoofdscherm" Background="LightGray">
         <TextBlock HorizontalAlignment="Left" Margin="45,34,0,0" TextWrapping="Wrap" FontSize="20px" FontWeight="bold" Text="Kleurenpsychologie" VerticalAlignment="Top" Height="43" Width="221"/>
         <Image Source="/assets/PXL.png" HorizontalAlignment="Left" Height="110" Margin="642,34,0,0" VerticalAlignment="Top" Width="110"/>
+        <Image Source="/assets/Rood.png" MouseLeave="Image_MouseLeave" MouseEnter="Image_MouseEnter_Rood" HorizontalAlignment="Left" Height="110" Margin="46,92,0,0" VerticalAlignment="Top" Width="110"/>
+        <Image Source="/assets/Geel.png" MouseLeave="Image_MouseLeave" MouseEnter="Image_MouseEnter_Geel" HorizontalAlignment="Left" Height="110" Margin="207,92,0,0" VerticalAlignment="Top" Width="110"/>
+        <Image Source="/assets/Blauw.png" MouseLeave="Image_MouseLeave" MouseEnter="Image_MouseEnter_Blauw" HorizontalAlignment="Left" Height="110" Margin="207,230,0,0" VerticalAlignment="Top" Width="110"/>
+        <Image Source="/assets/Groen.png" MouseLeave="Image_MouseLeave" MouseEnter="Image_MouseEnter_Groen" HorizontalAlignment="Left" Height="110" Margin="46,230,0,0" VerticalAlignment="Top" Width="110"/>
     </Grid>
 </Window>

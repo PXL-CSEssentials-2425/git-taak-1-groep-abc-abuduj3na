@@ -16,7 +16,6 @@ namespace Ucar_Meric_KleurenPaneel
     /// </summary>
     public partial class MainWindow : Window
     {
-        Grid Hoofdscherm;
         string Rood = "#FF0000";
         string Geel = "#FFFF00";
         string Blauw = "#0000FF";
@@ -26,30 +25,49 @@ namespace Ucar_Meric_KleurenPaneel
         public MainWindow()
         {
             InitializeComponent();
-            Hoofdscherm = hoofdscherm;
         }
 
         private void Image_MouseEnter_Rood(object sender, MouseEventArgs e)
         {
             // https://stackoverflow.com/questions/10062376/creating-solidcolorbrush-from-hex-color-value
-            Hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Rood);
+            hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Rood);
         }
         private void Image_MouseEnter_Geel(object sender, MouseEventArgs e)
         {
-            Hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Geel);
+            hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Geel);
         }
         private void Image_MouseEnter_Blauw(object sender, MouseEventArgs e)
         {
-            Hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Blauw);
+            hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Blauw);
         }
         private void Image_MouseEnter_Groen(object sender, MouseEventArgs e)
         {
-            Hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Groen);
+            hoofdscherm.Background = (SolidColorBrush)new BrushConverter().ConvertFrom(Groen);
         }
 
         private void Image_MouseLeave(object sender, MouseEventArgs e)
         {
-            Hoofdscherm.Background = Brushes.LightGray;
+            hoofdscherm.Background = Brushes.LightGray;
+        }
+
+        private void Image_MouseDown_Rood(object sender, MouseButtonEventArgs e)
+        {
+            tb_kleurcode.Text = Rood;
+        }
+
+        private void Image_MouseDown_Geel(object sender, MouseButtonEventArgs e)
+        {
+            tb_kleurcode.Text = Geel;
+        }
+
+        private void Image_MouseDown_Groen(object sender, MouseButtonEventArgs e)
+        {
+            tb_kleurcode.Text = Groen;
+        }
+
+        private void Image_MouseDown_Blauw(object sender, MouseButtonEventArgs e)
+        {
+            tb_kleurcode.Text = Blauw;
         }
     }
 }

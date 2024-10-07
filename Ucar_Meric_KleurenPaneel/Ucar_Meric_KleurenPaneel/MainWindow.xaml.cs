@@ -53,21 +53,25 @@ namespace Ucar_Meric_KleurenPaneel
         private void Image_MouseDown_Rood(object sender, MouseButtonEventArgs e)
         {
             tb_kleurcode.Text = Rood;
+            tb_info.Text = "Rood is de kleur van warmte";
         }
 
         private void Image_MouseDown_Geel(object sender, MouseButtonEventArgs e)
         {
             tb_kleurcode.Text = Geel;
+            tb_info.Text = "Geel is de kleur van levenslust";
         }
 
         private void Image_MouseDown_Groen(object sender, MouseButtonEventArgs e)
         {
             tb_kleurcode.Text = Groen;
+            tb_info.Text = "Groen is de kleur van genezing";
         }
 
         private void Image_MouseDown_Blauw(object sender, MouseButtonEventArgs e)
         {
             tb_kleurcode.Text = Blauw;
+            tb_info.Text = "Blauw is de kleur van intelligentie";
         }
     }
 }

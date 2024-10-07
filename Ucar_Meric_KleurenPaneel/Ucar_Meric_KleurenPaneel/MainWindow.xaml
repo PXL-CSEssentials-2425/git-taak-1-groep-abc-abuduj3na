@@ -15,5 +15,7 @@
         <Image Source="/assets/Groen.png" MouseDown="Image_MouseDown_Groen" MouseLeave="Image_MouseLeave" MouseEnter="Image_MouseEnter_Groen" HorizontalAlignment="Left" Height="110" Margin="46,230,0,0" VerticalAlignment="Top" Width="110"/>
         <TextBlock HorizontalAlignment="Left" Margin="61,354,0,0" TextWrapping="Wrap" Text="Kleurcode:" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Top"/>
         <TextBox x:Name="tb_kleurcode" HorizontalAlignment="Left" Margin="156,356,0,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="212" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,379,0,0" TextWrapping="Wrap" Text="Informatie:" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_info" HorizontalAlignment="Left" Margin="156,381,0,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="212" Height="18"/>
     </Grid>
 </Window>
